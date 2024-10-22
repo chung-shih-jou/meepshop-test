@@ -16,6 +16,10 @@ Test [http://localhost:13000](http://localhost:13000) in integration-test from `
 
 Test [http://localhost:13000](http://localhost:13000) in unit-test from /rest-api-test/unit-test.http.
 
+First should be setup table.
+Use withdraw and deposit money by id.
+Or Transfer money by ids.
+
 ## Framework explain
 
 ### server.js

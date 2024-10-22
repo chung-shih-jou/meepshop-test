@@ -1,22 +1,29 @@
 @endpoint = http://localhost:13000
+
+# Setup the database (account)
 POST {{endpoint}}/setup
 ###
 
-GET {{endpoint}}/accounts
-
-### 
-
-GET {{endpoint}}/accounts/3
-
-### 
+# Create account
 POST {{endpoint}}/accounts
 Content-Type: application/json
 
 {
 "name": "Sam", "balance": 100
 }
+### 
+
+# Get bank all accounts information
+GET {{endpoint}}/accounts
 
 ### 
+
+# Get the account information by id
+GET {{endpoint}}/accounts/3
+
+### 
+
+# withdraw money from account
 POST {{endpoint}}/accounts/1/withdraw
 Content-Type: application/json
 
@@ -24,6 +31,8 @@ Content-Type: application/json
 "money": 100
 }
 ### 
+
+# deposit money from account
 POST {{endpoint}}/accounts/1/deposit
 Content-Type: application/json
 
@@ -31,6 +40,8 @@ Content-Type: application/json
 "money": 110
 }
 ### 
+
+# transfer money by id
 POST {{endpoint}}/accounts/1/transfer/2
 Content-Type: application/json
 
