@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@jest/globals": "^29.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
