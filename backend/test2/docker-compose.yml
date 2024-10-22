@@ -1,0 +1,12 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: Rose
+      POSTGRES_DB: test
+  app:
+    image: meepshop-test
+    ports:
+      - 13000:3000

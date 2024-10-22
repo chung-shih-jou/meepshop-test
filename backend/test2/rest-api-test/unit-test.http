@@ -1,0 +1,39 @@
+@endpoint = http://localhost:13000
+POST {{endpoint}}/setup
+###
+
+GET {{endpoint}}/accounts
+
+### 
+
+GET {{endpoint}}/accounts/3
+
+### 
+POST {{endpoint}}/accounts
+Content-Type: application/json
+
+{
+"name": "Sam", "balance": 100
+}
+
+### 
+POST {{endpoint}}/accounts/1/withdraw
+Content-Type: application/json
+
+{
+"money": 100
+}
+### 
+POST {{endpoint}}/accounts/1/deposit
+Content-Type: application/json
+
+{
+"money": 110
+}
+### 
+POST {{endpoint}}/accounts/1/transfer/2
+Content-Type: application/json
+
+{
+"money": 100
+}

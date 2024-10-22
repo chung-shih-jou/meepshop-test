@@ -1,0 +1,28 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node rest-api-test/integration-test/index.js",
+    "start": "node server.js",
+    "docker": "docker build -t meepshop-test .; docker-compose up"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "express": "^4.21.1",
+    "koa": "^2.15.3",
+    "koa-logger": "^3.2.1",
+    "koa-mount": "^4.0.0",
+    "pg": "^8.13.0",
+    "prompt-sync": "^4.2.0",
+    "readline-sync": "^1.4.10",
+    "ronin-mocks": "^0.1.11",
+    "ronin-server": "^0.1.3"
+  }
+}
